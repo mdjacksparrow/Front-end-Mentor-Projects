@@ -6,37 +6,51 @@
  box-sizing: border-box;
 }
 
+/* Global setting  */
 body{
  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img{
+ max-width: 100%;
 }
 
 h1{
  font-size: 2.18rem;
  font-weight: 600;
  color: hsl(210, 10%, 33%);
- padding: 1rem 0;
+ padding: 1rem 0.4rem;
  font-weight: 600;
  font-size: 2.18rem;
  width: 80%;
+ text-align: center;
  margin: auto;
+}
+
+h3,h4,span{
+ color: hsl(210, 10%, 33%);
+ font-size: 1.3rem;
 }
 
 p{
  padding: 0.8rem;
  text-align: center;
- line-height: 2;
+ line-height: 1.5;
  width: 80%;
  margin: auto;
  color: hsl(201, 11%, 66%);
- font-size: 18px;
+ font-size: 16px;
 }
 
+
+/* Header section  */
 .header{
- border: 1px solid black;
- display: block;
+ /* border: 1px solid black; */
+ /* display: block; */
  width: 60%;
  text-align: center;
  margin:auto;
+ margin-bottom: 5rem;
  justify-content: center;
 }
 
@@ -47,7 +61,7 @@ p{
 }
 
 
-.header button{
+button{
  padding: 1rem;
  margin: 1rem;
  border: none;
@@ -56,32 +70,297 @@ p{
  color: white;
  font-size: 18px;
  width: 16rem;
+ cursor: grab;
+ /* display: block; */
 }
 
-.header .btn-iOS{
+.btn-iOS:hover{
+ background-color: hsl(171, 51%, 57%);
+}
+
+.btn-mac:hover{
+ background-color: hsl(233, 58%, 55%);
+}
+
+.btn-iOS{
  padding: 1rem;
  margin: 0.5rem;
  background-color:  hsl(171, 66%, 44%);
  box-shadow: 2px 2px 3px hsl(171, 51%, 39%);
 }
 
-.header .btn-mac{
+.btn-mac{
  background-color:  hsl(233, 100%, 69%);
  box-shadow: 2px 2px 3px hsl(233, 48%, 47%);
 }
 
+
+/* Content-1 section  */
+.content-1{
+ /* border: 1px solid black; */
+ width: 60%;
+ margin: auto;
+ text-align: center;
+}
+
+/* Content-2 section */
+.content-2{
+ margin: 4rem 0;
+ display: flex;
+ width: 100%;
+ text-align: left;
+ padding: 0;
+}
+
+.content-2 .specification .sub-content{
+ margin: 2rem 3rem 2rem 4rem;
+}
+
+.content-2 .specification .sub-content p{
+ width: 100%;
+ text-align: left;
+ padding: 1rem 0;
+ line-height: 1.5;
+}
+
+/* Content-3 section  */
+.content-3{
+ /* border: 1px solid black; */
+ width: 60%;
+ margin: 2rem auto auto auto ;
+ text-align: center;
+}
+
+.content-3 img{
+ padding-top:2rem ;
+}
+
+/* Accessability section  */
+.accessibility{
+ text-align: center;
+ display: flex;
+}
+
+.accessibility div{
+ padding: 2rem;
+}
+
+.accessibility div h4{
+ padding: 1.4rem 0;
+}
+
+/* Sponsors section */
+.sponsors{
+ display: flex;
+ margin: 2rem 0;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+
+.sponsors img{
+ padding: 2rem;
+ display: block;
+}
+
+/* Download section  */
+.download-section{
+ width: 60%;
+ margin: 5rem auto;
+ text-align: center;
+}
+
+/* Footer section  */
+.footer{
+ /* width: 70%; */
+ /* margin: auto; */
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.footer .links{
+ width: 70%;
+}
+
+.footer .links{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+
+.footer .links img{
+ width: 90px;
+ padding: 20px;
+ margin: 2rem;
+ margin: auto;
+ display: block;
+}
+
+.footer .links .sub-links{
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ justify-content: center;
+}
+
+.footer .links .sub-links span{
+ display: block;
+ padding: 1rem;
+}
+
+.footer .link-icons{
+ width: 30%;
+ text-align: center;
+ vertical-align: center;
+}
+
+.footer .link-icons .social{
+ align-content: center;
+ margin-top: 1rem;
+}
+
+.footer .link-icons .social img{
+ padding: 1rem;
+}
+
+
+/* For responsive web design  Mobile = 600px */
 @media only screen and  (max-width:600px){
+
+  h1{
+  font-size: 1.66rem;
+  width: 100%;
+ }
+
+ h3{
+  font-size: 1.6rem;
+ }
+
+ p{
+  width: 100%;
+ }
+
+ img{
+  padding: 1rem;
+ }
 
  .header{
   width: 100%;
   padding:1rem;
  }
 
- h1{
-  font-size: 1.66rem;
+ .content-1{
+  width: 100%;
+  padding: 1rem;
+ }
+
+ .content-2{
+  text-align: center;
+  flex-direction: column;
+ }
+
+.content-2 .specification .sub-content{
+ margin: 2rem 0;
+}
+ 
+.content-2 .specification .sub-content p{
+ padding: 10px 1rem;
+ text-align: center;
+}
+
+/* Accessibility of product  */
+.accessibility{
+ text-align: center;
+ flex-direction: column;
+ margin: auto;
+}
+
+/* Download section  */
+.download-section{
+ width: 100%;
+ margin: 5rem auto;
+ text-align: center;
+}
+
+/* footer section  */
+.footer .link, .footer .link-icons{
+ width: 100%;
+}
+.footer , .footer .links img{
+ display: block;
+ margin: auto;
+}
+ .footer .links .sub-links span{
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+ }
+}
+
+
+/* For responsive in tablets width = 856px */
+@media (max-width : 900px){
+ img{
+  padding: 1rem;
+ }
+
+ h1,h3,p{
+  text-align: center;
+ }
+
+ .content-2{
+  flex-direction: column;
+ }
+
+ 
+ .header{
+  width: 100%;
+  padding:1rem;
+ }
+
+ .content-1{
+  width: 100%;
+  padding: 1rem;
+ }
+
+ .content-3{
   width: 100%;
  }
- p{
+
+ /* Download section  */
+.download-section{
+ width: 80%;
+ margin: 5rem auto;
+ text-align: center;
+}
+
+/* Specification */
+.content-2{
+  text-align: center;
+  flex-direction: column;
+ }
+
+.content-2 .specification .sub-content{
+ margin: 2rem 0;
+}
+ 
+.content-2 .specification .sub-content p{
+ padding: 10px 1rem;
+ text-align: center;
+}
+
+
+/* footer section  */
+.footer .links, .footer .link-icons{
+ width: 100%;
+}
+
+.footer , .footer .links img{
+ display: block;
+ margin: auto;
+}
+ .footer .links .sub-links span{
   width: 100%;
+  text-align: center;
+  padding: 1rem 0;
  }
 }
