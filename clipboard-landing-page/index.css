@@ -154,6 +154,7 @@ button{
  display: flex;
  margin: 2rem 0;
  flex-wrap: wrap;
+ align-items: center;
  justify-content: space-evenly;
 }
 
